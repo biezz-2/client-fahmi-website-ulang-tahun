@@ -259,8 +259,16 @@ export default function BirthdayPage() {
           {birthdayData.familyGreeting}
         </p>
 
-        <div className="mt-12 pt-6 border-t border-amber-200 text-xs text-amber-700/70">
-          Website Undangan Ulang Tahun • Dibuat dengan cinta untuk {birthdayData.childName} 🎈
+        <div className="mt-12 pt-6 border-t border-amber-200 text-xs text-amber-700/80">
+          Made By:{" "}
+          <a
+            href="https://github.com/biezz-2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-amber-900 underline hover:text-amber-700 transition-colors"
+          >
+            biezz-2
+          </a>
         </div>
       </footer>
     </div>

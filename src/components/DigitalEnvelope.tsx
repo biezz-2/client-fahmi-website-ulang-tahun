@@ -23,17 +23,17 @@ export function DigitalEnvelope({ qrisImage, accounts, childName = "Fathan" }: D
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto bg-white rounded-3xl p-6 sm:p-8 border-4 border-amber-200 shadow-xl relative overflow-hidden">
-      {/* Decorative ears / badge */}
-      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white text-xs font-bold px-6 py-1.5 rounded-full uppercase tracking-wider shadow">
+    <div className="w-full max-w-lg mx-auto bg-white rounded-3xl pt-10 pb-6 px-6 sm:pt-12 sm:pb-8 sm:px-8 border-4 border-amber-200 shadow-xl relative">
+      {/* Decorative badge with proper clearance */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-amber-500 text-white text-xs font-bold px-6 py-1.5 rounded-full uppercase tracking-wider shadow-md whitespace-nowrap z-10">
         🎁 Amplop Digital & Kado
       </div>
 
-      <div className="text-center mt-3 mb-6">
-        <h3 className="text-xl sm:text-2xl font-black text-amber-900">
+      <div className="text-center mt-2 mb-6">
+        <h3 className="text-xl sm:text-2xl font-black text-amber-900 leading-snug">
           Kado & Tanda Kasih Untuk {childName}
         </h3>
-        <p className="text-sm text-amber-700/80 mt-1 max-w-sm mx-auto">
+        <p className="text-sm text-amber-700/80 mt-1.5 max-w-sm mx-auto">
           Doa restu Om, Tante, dan teman-teman adalah kado terindah. Jika ingin memberikan tanda kasih secara digital, silakan gunakan QRIS atau transfer berikut:
         </p>
       </div>

@@ -46,7 +46,7 @@ export const birthdayData: BirthdayConfig = {
   locationAddress: "Gembol Sari",
   mapsUrl: "https://maps.google.com/?q=Gembol+Sari",
   heroImage: "/images/fahmi-hero.jpg",
-  qrisImage: "/qris-sample.svg",
+  qrisImage: "/qris.jpeg",
   rundownStatus: "Ke Runding Hela (Akan Segera Diumumkan)",
   bankAccounts: [
     {
