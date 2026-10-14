@@ -174,9 +174,6 @@ export default function BirthdayPage() {
                 <p className="text-sm text-amber-900/80 mt-2 leading-relaxed">
                   {birthdayData.locationAddress}
                 </p>
-                <div className="mt-4 p-3 bg-white rounded-xl border border-amber-200 text-xs text-amber-800">
-                  <span className="font-bold">🚗 Catatan Akses:</span> Tersedia area parkir untuk mobil dan motor di halaman samping rumah.
-                </div>
               </div>
 
               <div className="mt-6">
