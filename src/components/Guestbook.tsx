@@ -10,25 +10,30 @@ interface Wish {
   time: string;
 }
 
+interface GuestbookProps {
+  childName?: string;
+  age?: number;
+}
+
 const DEFAULT_WISHES: Wish[] = [
   {
     id: "1",
     name: "Tante Sarah & Om Budi",
-    message: "Selamat ulang tahun Fahmi sayang! Semoga tumbuh jadi anak sholeh, cerdas, dan pemberani seperti singa! 🦁",
+    message: "Selamat ulang tahun pertama Fathan sayang! Semoga tumbuh jadi anak sholeh, cerdas, dan pemberani seperti singa! 🦁",
     avatar: "🦁",
     time: "Baru saja",
   },
   {
     id: "2",
     name: "Kakak Alif & Dafa",
-    message: "HBD Fahmi! Nanti kita main mobil-mobilan dan balapan bareng ya! 🦒🚀",
+    message: "HBD adik Fathan! Semoga sehat selalu, cepat jalan dan makin pintar! 🦒🚀",
     avatar: "🦒",
     time: "1 jam lalu",
   },
   {
     id: "3",
     name: "Keluarga Om Danu",
-    message: "Barakallah fii umrik Fahmi yang ke-5! Sehat selalu dan banyak rezeki orang tuanya 🐘🎉",
+    message: "Barakallah fii umrik Fathan yang ke-1! Sehat selalu dan jadi kebanggaan orang tua ya 🐘🎉",
     avatar: "🐘",
     time: "2 jam lalu",
   },
@@ -36,7 +41,7 @@ const DEFAULT_WISHES: Wish[] = [
 
 const ANIMAL_AVATARS = ["🦁", "🦒", "🐘", "🐒", "🦉", "🦓", "🐼", "🦊"];
 
-export function Guestbook() {
+export function Guestbook({ childName = "Fathan", age = 1 }: GuestbookProps) {
   const [wishes, setWishes] = useState<Wish[]>(DEFAULT_WISHES);
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
@@ -87,7 +92,7 @@ export function Guestbook() {
           Buku Tamu & Ucapan Doa
         </h3>
         <p className="text-xs sm:text-sm text-amber-800/80">
-          Tinggalkan pesan hangat dan doa manis untuk ulang tahun Fahmi!
+          Tinggalkan pesan hangat dan doa manis untuk ulang tahun {childName}!
         </p>
       </div>
 
@@ -133,7 +138,7 @@ export function Guestbook() {
             rows={3}
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Tulis ucapan selamat dan doa untuk Fahmi..."
+            placeholder={`Tulis ucapan selamat dan doa untuk ${childName}...`}
             className="w-full px-4 py-2.5 rounded-xl border-2 border-amber-200 focus:border-amber-500 focus:outline-none text-sm text-amber-950 bg-amber-50/40 resize-none"
           />
         </div>

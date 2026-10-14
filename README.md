@@ -1,17 +1,17 @@
-# Website Selamat Ulang Tahun Fahmi (Safari & Animal Friends) 🦁🎈
+# Website Selamat Ulang Tahun Fathan (Safari & Animal Friends) 🦁🎈
 
-Website undangan ulang tahun interaktif untuk **Fahmi Al-Fatih** yang bertema petualangan satwa rimba ceria (*Safari & Animal Friends*). Dibangun dengan performa tinggi, responsif untuk perangkat mobile, serta ramah pengguna.
+Website undangan ulang tahun interaktif untuk **Muhammad Fathan Kahfi Putra (Fathan)** yang bertema petualangan satwa rimba ceria (*Safari & Animal Friends*). Dibangun dengan performa tinggi, responsif untuk perangkat mobile, serta ramah pengguna.
 
 ---
 
 ## 🌟 Fitur Utama
 
 - **💌 Splash Screen Interaktif**: Layar sambutan dengan animasi satwa dan tombol *"Buka Undangan"* yang membuka pemutaran audio secara mulus.
-- **🦁 Hero & Countdown Timer**: Nama lengkap, usia ulang tahun ke-5, foto berbingkai hewan safari, dan penghitung waktu mundur menuju hari-H.
-- **📍 Detail Acara & Peta**: Tanggal, waktu pelaksanaan, alamat lengkap, dress code, tombol navigasi Google Maps, dan tombol simpan otomatis ke Google Calendar.
-- **🎪 Rundown Acara**: Panduan alur kegiatan seru selama pesta ulang tahun berlangsung.
-- **📸 Galeri Foto**: Koleksi momen ceria Fahmi dengan modal pembesar (lightbox).
-- **🎁 Amplop Digital & QRIS**: Pindai QRIS (BCA, Mandiri, GoPay, OVO, Dana) dan salin nomor rekening bank dalam 1-klik dengan notifikasi status instan.
+- **🦁 Hero & Countdown Timer**: Nama lengkap (**MUHAMMAD FATHAN KAHFI PUTRA**), usia ulang tahun ke-1, foto berbingkai hewan safari, dan penghitung waktu mundur menuju hari-H (Sabtu, 24 Oktober 2026).
+- **📍 Detail Acara & Peta**: Tanggal, waktu pelaksanaan, alamat lengkap (**Rumah Fathan - Gembol Sari**), dress code, tombol navigasi Google Maps, dan tombol simpan otomatis ke Google Calendar.
+- **🎪 Rundown Acara**: Status rundown terkonfigurasi (*Ke Runding Hela / Sedang Dimusyawarahkan*).
+- **📸 Galeri Foto**: Koleksi momen ceria Fathan dengan modal pembesar (lightbox).
+- **🎁 Amplop Digital & QRIS**: Pindai QRIS dan transfer (BCA: 2780995389 & GoPay: 08211322021) 1-klik dengan notifikasi status instan.
 - **💌 Buku Tamu & Doa (Guestbook)**: Formulir ucapan selamat dan doa dengan pilihan avatar karakter hewan lucu serta persistensi data browser.
 - **🎶 Musik & Confetti**: Backsound melodi *Happy Birthday* menggunakan Web Audio API tanpa beban file audio eksternal yang lambat, disertai taburan confetti kanvas warna-warni.
 - **⚙️ Konfigurasi Mudah**: Seluruh teks, tanggal, lokasi, foto, dan rekening bank terpusat di `src/data/birthdayData.ts`.

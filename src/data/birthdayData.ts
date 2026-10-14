@@ -26,6 +26,7 @@ export interface BirthdayConfig {
   mapsUrl: string;
   heroImage: string;
   qrisImage: string;
+  rundownStatus: string;
   bankAccounts: BankAccount[];
   gallery: GalleryPhoto[];
   closingMessage: string;
@@ -33,36 +34,31 @@ export interface BirthdayConfig {
 }
 
 export const birthdayData: BirthdayConfig = {
-  childName: "Fahmi Al-Fatih",
-  nickName: "Fahmi",
-  age: 5,
+  childName: "MUHAMMAD FATHAN KAHFI PUTRA",
+  nickName: "Fathan",
+  age: 1,
   theme: "Safari Adventure & Animal Friends",
-  tagline: "Petualangan Seru di Rimba Satwa!",
-  date: "Minggu, 25 Oktober 2026",
-  time: "10:00 - 13:00 WIB",
-  isoDate: "2026-10-25T10:00:00+07:00",
-  locationName: "Rumah Fahmi (Safari House)",
-  locationAddress: "Jl. Cendrawasih No. 24, Kebayoran Baru, Jakarta Selatan",
-  mapsUrl: "https://maps.google.com/?q=Jakarta+Selatan",
+  tagline: "Petualangan Ceria di Rimba Satwa!",
+  date: "Sabtu, 24 Oktober 2026",
+  time: "10:00 WIB - Selesai",
+  isoDate: "2026-10-24T10:00:00+07:00",
+  locationName: "Rumah Fathan",
+  locationAddress: "Gembol Sari",
+  mapsUrl: "https://maps.google.com/?q=Gembol+Sari",
   heroImage: "/images/fahmi-hero.jpg",
   qrisImage: "/qris-sample.svg",
+  rundownStatus: "Ke Runding Hela (Akan Segera Diumumkan)",
   bankAccounts: [
     {
       bank: "BCA",
-      accountNumber: "8415291048",
-      accountName: "Ahmad / Orang Tua Fahmi",
+      accountNumber: "2780995389",
+      accountName: "Orang Tua Fathan",
       badge: "Bank Transfer",
     },
     {
-      bank: "Mandiri",
-      accountNumber: "1270009841235",
-      accountName: "Ahmad / Orang Tua Fahmi",
-      badge: "Bank Transfer",
-    },
-    {
-      bank: "GoPay / DANA",
-      accountNumber: "081298765432",
-      accountName: "Fahmi Family",
+      bank: "GoPay",
+      accountNumber: "08211322021",
+      accountName: "Fathan Family",
       badge: "E-Wallet",
     },
   ],
@@ -70,29 +66,29 @@ export const birthdayData: BirthdayConfig = {
     {
       id: 1,
       url: "https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80",
-      caption: "Fahmi tersenyum ceria bersama boneka singa",
+      caption: "Fathan tersenyum ceria bersama boneka singa",
       animalTag: "🦁 Singa Pemberani",
     },
     {
       id: 2,
       url: "https://images.unsplash.com/photo-1533450718592-29d45635f0a9?w=600&auto=format&fit=crop&q=80",
-      caption: "Petualangan pertama melihat jerapah di kebun binatang",
+      caption: "Petualangan melihat jerapah yang tinggi dan lucu",
       animalTag: "🦒 Jerapah Tinggi",
     },
     {
       id: 3,
       url: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600&auto=format&fit=crop&q=80",
-      caption: "Sahabat setia bermain di taman",
+      caption: "Sahabat setia bermain di taman safari",
       animalTag: "🐘 Gajah Baik Hati",
     },
     {
       id: 4,
       url: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&auto=format&fit=crop&q=80",
-      caption: "Tertawa riang bersama teman-teman",
+      caption: "Tertawa riang di hari ulang tahun pertama",
       animalTag: "🐒 Monyet Lincah",
     },
   ],
   closingMessage:
-    "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Om, Tante, dan teman-teman berkenan hadir dan memberikan doa restu untuk Fahmi.",
-  familyGreeting: "Keluarga Besar Fahmi Al-Fatih",
+    "Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Om, Tante, dan teman-teman berkenan hadir dan memberikan doa restu untuk Fathan.",
+  familyGreeting: "Keluarga Besar Muhammad Fathan Kahfi Putra",
 };

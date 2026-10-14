@@ -7,9 +7,10 @@ import { BankAccount } from "@/data/birthdayData";
 interface DigitalEnvelopeProps {
   qrisImage: string;
   accounts: BankAccount[];
+  childName?: string;
 }
 
-export function DigitalEnvelope({ qrisImage, accounts }: DigitalEnvelopeProps) {
+export function DigitalEnvelope({ qrisImage, accounts, childName = "Fathan" }: DigitalEnvelopeProps) {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
   const [showQrisModal, setShowQrisModal] = useState<boolean>(false);
 
@@ -30,7 +31,7 @@ export function DigitalEnvelope({ qrisImage, accounts }: DigitalEnvelopeProps) {
 
       <div className="text-center mt-3 mb-6">
         <h3 className="text-xl sm:text-2xl font-black text-amber-900">
-          Kado & Tanda Kasih Untuk Fahmi
+          Kado & Tanda Kasih Untuk {childName}
         </h3>
         <p className="text-sm text-amber-700/80 mt-1 max-w-sm mx-auto">
           Doa restu Om, Tante, dan teman-teman adalah kado terindah. Jika ingin memberikan tanda kasih secara digital, silakan gunakan QRIS atau transfer berikut:
@@ -48,7 +49,7 @@ export function DigitalEnvelope({ qrisImage, accounts }: DigitalEnvelopeProps) {
         >
           <Image
             src={qrisImage}
-            alt="QRIS Fahmi"
+            alt={`QRIS ${childName}`}
             width={200}
             height={240}
             className="w-48 h-auto object-contain rounded-lg"

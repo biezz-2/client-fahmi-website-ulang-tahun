@@ -14,7 +14,7 @@
   <text x="200" y="68" fill="#ffedd5" font-family="system-ui, sans-serif" font-weight="600" font-size="12" text-anchor="middle">PEMBAYARAN DIGITAL NASIONAL</text>
   
   <!-- Target recipient -->
-  <text x="200" y="125" fill="#1c1917" font-family="system-ui, sans-serif" font-weight="700" font-size="18" text-anchor="middle">FAHMI AL-FATIH (KADO)</text>
+  <text x="200" y="125" fill="#1c1917" font-family="system-ui, sans-serif" font-weight="700" font-size="16" text-anchor="middle">M. FATHAN KAHFI PUTRA (KADO)</text>
   <text x="200" y="146" fill="#78716c" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">NMID: ID10202684910284</text>
   
   <!-- QR Code Mock Graphic -->

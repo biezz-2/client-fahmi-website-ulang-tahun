@@ -28,7 +28,7 @@ export default function BirthdayPage() {
 
   const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
     `Ulang Tahun ${birthdayData.childName} ke-${birthdayData.age}`
-  )}&dates=20261025T030000Z/20261025T060000Z&details=${encodeURIComponent(
+  )}&dates=20261024T030000Z/20261024T060000Z&details=${encodeURIComponent(
     `Perayaan Ulang Tahun ${birthdayData.childName} yang ke-${birthdayData.age} bertema Safari Hewan.`
   )}&location=${encodeURIComponent(birthdayData.locationAddress)}`;
 
@@ -193,25 +193,19 @@ export default function BirthdayPage() {
           </div>
 
           {/* Rundown Pesta */}
-          <div className="mt-10 bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-200 shadow-md">
-            <h4 className="text-lg font-black text-amber-950 text-center mb-6">
-              🎪 Rundown Keseruan Safari
-            </h4>
-            <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-center">
-              {[
-                { time: "10:00", title: "Registrasi & Safari Welcoming", icon: "🦁" },
-                { time: "10:30", title: "Animal Games & Kuis Hadiah", icon: "🦒" },
-                { time: "11:15", title: "Tiup Lilin & Potong Kue", icon: "🎂" },
-                { time: "11:45", title: "Makan Siang & Foto Bersama", icon: "🐘" },
-                { time: "12:45", title: "Pembagian Safari Goodie Bag", icon: "🎁" },
-              ].map((item) => (
-                <div key={item.time} className="p-3 bg-amber-50 rounded-2xl border border-amber-200 flex flex-col items-center">
-                  <span className="text-2xl mb-1">{item.icon}</span>
-                  <span className="font-black text-amber-700 text-sm">{item.time}</span>
-                  <span className="text-xs font-semibold text-amber-950 mt-1 leading-tight">{item.title}</span>
-                </div>
-              ))}
+          <div className="mt-10 bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-200 shadow-md text-center">
+            <div className="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3">
+              🎪
             </div>
+            <h4 className="text-lg font-black text-amber-950 mb-2">
+              Rundown Acara
+            </h4>
+            <div className="inline-block bg-amber-100 text-amber-900 border border-amber-300 font-bold px-5 py-2 rounded-2xl text-sm shadow-xs">
+              🕒 {birthdayData.rundownStatus}
+            </div>
+            <p className="text-xs sm:text-sm text-amber-800/80 mt-3 max-w-md mx-auto leading-relaxed">
+              Susunan kegiatan dan keseruan pesta ulang tahun {birthdayData.nickName} sedang dimusyawarahkan (ke runding hela). Informasi detail akan diumumkan menjelang hari pelaksanaan!
+            </p>
           </div>
         </div>
       </section>
@@ -223,10 +217,10 @@ export default function BirthdayPage() {
             Momen Berharga
           </span>
           <h3 className="text-2xl sm:text-3xl font-black text-amber-950 mt-1">
-            Galeri Petualangan Fahmi
+            Galeri Petualangan {birthdayData.nickName}
           </h3>
           <p className="text-sm text-amber-800/80 mt-1">
-            Potret senyuman manis dan petualangan ceria Fahmi!
+            Potret senyuman manis dan petualangan ceria {birthdayData.nickName}!
           </p>
         </div>
 
@@ -238,12 +232,13 @@ export default function BirthdayPage() {
         <DigitalEnvelope
           qrisImage={birthdayData.qrisImage}
           accounts={birthdayData.bankAccounts}
+          childName={birthdayData.nickName}
         />
       </section>
 
       {/* GUESTBOOK SECTION */}
       <section className="relative z-10 py-14 px-4 max-w-4xl mx-auto">
-        <Guestbook />
+        <Guestbook childName={birthdayData.nickName} age={birthdayData.age} />
       </section>
 
       {/* CLOSING SECTION */}
@@ -265,7 +260,7 @@ export default function BirthdayPage() {
         </p>
 
         <div className="mt-12 pt-6 border-t border-amber-200 text-xs text-amber-700/70">
-          Website Undangan Ulang Tahun • Dibuat dengan cinta untuk Fahmi Al-Fatih 🎈
+          Website Undangan Ulang Tahun • Dibuat dengan cinta untuk {birthdayData.childName} 🎈
         </div>
       </footer>
     </div>

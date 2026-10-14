@@ -4,20 +4,21 @@ File konfigurasi berada di `src/data/birthdayData.ts`. Ubah isi objek berikut un
 
 ```typescript
 export const birthdayData: BirthdayConfig = {
-  childName: "Fahmi Al-Fatih",       // Nama lengkap
-  nickName: "Fahmi",                 // Panggilan
-  age: 5,                            // Usia ulang tahun
-  theme: "Safari Adventure",         // Tema pesta
-  tagline: "Petualangan Seru...",    // Slogan kecil
-  date: "Minggu, 25 Oktober 2026",   // Format teks tanggal
-  time: "10:00 - 13:00 WIB",         // Waktu acara
-  isoDate: "2026-10-25T10:00:00+07:00", // Waktu untuk countdown
-  locationName: "Rumah Fahmi",       // Nama tempat
-  locationAddress: "Jl. Cendrawasih...", // Alamat lengkap
-  mapsUrl: "https://maps.google.com/...", // Link Google Maps
-  heroImage: "/images/fahmi-hero.jpg",    // Foto utama
-  qrisImage: "/qris-sample.svg",          // Path gambar QRIS
-  bankAccounts: [ ... ],             // Rekening bank & E-wallet
+  childName: "MUHAMMAD FATHAN KAHFI PUTRA", // Nama lengkap
+  nickName: "Fathan",                 // Panggilan
+  age: 1,                            // Usia ulang tahun
+  theme: "Safari Adventure & Animal Friends", // Tema pesta
+  tagline: "Petualangan Ceria di Rimba Satwa!", // Slogan kecil
+  date: "Sabtu, 24 Oktober 2026",    // Format teks tanggal
+  time: "10:00 WIB - Selesai",       // Waktu acara
+  isoDate: "2026-10-24T10:00:00+07:00", // Waktu untuk countdown
+  locationName: "Rumah Fathan",       // Nama tempat
+  locationAddress: "Gembol Sari",    // Alamat lengkap
+  mapsUrl: "https://maps.google.com/?q=Gembol+Sari", // Link Google Maps
+  heroImage: "/images/fahmi-hero.jpg", // Foto utama
+  qrisImage: "/qris-sample.svg",      // Path gambar QRIS
+  rundownStatus: "Ke Runding Hela (Akan Segera Diumumkan)", // Status rundown
+  bankAccounts: [ ... ],             // Rekening bank & E-wallet (BCA & GoPay)
   gallery: [ ... ],                  // Koleksi foto kenangan
   closingMessage: "...",             // Pesan penutup
   familyGreeting: "..."              // Nama keluarga besar
