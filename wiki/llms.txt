@@ -1,0 +1,8 @@
+# Website Ulang Tahun Fahmi (Safari Animal Friends)
+> Website undangan ulang tahun anak interaktif bertema hewan satwa safari berbasis Next.js 16, TypeScript, dan Tailwind CSS.
+
+## Dokumen
+- [Overview](wiki/overview.md): Ringkasan proyek dan fitur utama
+- [Arsitektur](wiki/concepts/architecture.md): Struktur komponen dan implementasi native
+- [Deployment](wiki/guides/deployment.md): Panduan menjalankan di lokal dan deploy ke Vercel
+- [Konfigurasi](wiki/reference/configuration.md): Dokumentasi variabel data acara di birthdayData.ts

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" rx="24" fill="#ffffff" stroke="#fed7aa" stroke-width="4"/>
+  
+  <!-- Header QRIS style -->
+  <path d="M 0 24 C 0 10.745 10.745 0 24 0 L 376 0 C 389.255 0 400 10.745 400 24 L 400 90 L 0 90 Z" fill="url(#headerGrad)"/>
+  
+  <text x="200" y="42" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="800" font-size="24" text-anchor="middle" letter-spacing="2">QRIS</text>
+  <text x="200" y="68" fill="#ffedd5" font-family="system-ui, sans-serif" font-weight="600" font-size="12" text-anchor="middle">PEMBAYARAN DIGITAL NASIONAL</text>
+  
+  <!-- Target recipient -->
+  <text x="200" y="125" fill="#1c1917" font-family="system-ui, sans-serif" font-weight="700" font-size="18" text-anchor="middle">FAHMI AL-FATIH (KADO)</text>
+  <text x="200" y="146" fill="#78716c" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">NMID: ID10202684910284</text>
+  
+  <!-- QR Code Mock Graphic -->
+  <g transform="translate(60, 160)">
+    <rect width="280" height="280" fill="#f8fafc" rx="16" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Corner markers -->
+    <!-- Top-Left -->
+    <rect x="25" y="25" width="55" height="55" fill="#0f172a" rx="8"/>
+    <rect x="35" y="35" width="35" height="35" fill="#ffffff" rx="4"/>
+    <rect x="43" y="43" width="19" height="19" fill="#ea580c" rx="2"/>
+
+    <!-- Top-Right -->
+    <rect x="200" y="25" width="55" height="55" fill="#0f172a" rx="8"/>
+    <rect x="210" y="35" width="35" height="35" fill="#ffffff" rx="4"/>
+    <rect x="218" y="43" width="19" height="19" fill="#ea580c" rx="2"/>
+
+    <!-- Bottom-Left -->
+    <rect x="25" y="200" width="55" height="55" fill="#0f172a" rx="8"/>
+    <rect x="35" y="210" width="35" height="35" fill="#ffffff" rx="4"/>
+    <rect x="43" y="218" width="19" height="19" fill="#ea580c" rx="2"/>
+
+    <!-- Data matrix pattern -->
+    <rect x="95" y="25" width="14" height="28" fill="#1e293b"/>
+    <rect x="120" y="25" width="28" height="14" fill="#1e293b"/>
+    <rect x="160" y="25" width="24" height="14" fill="#1e293b"/>
+    <rect x="95" y="65" width="28" height="14" fill="#1e293b"/>
+    <rect x="135" y="50" width="14" height="30" fill="#1e293b"/>
+    <rect x="160" y="55" width="24" height="24" fill="#1e293b"/>
+
+    <rect x="25" y="95" width="14" height="30" fill="#1e293b"/>
+    <rect x="50" y="105" width="30" height="14" fill="#1e293b"/>
+    <rect x="25" y="140" width="28" height="14" fill="#1e293b"/>
+    <rect x="65" y="135" width="15" height="40" fill="#1e293b"/>
+
+    <rect x="95" y="95" width="90" height="90" fill="#fed7aa" rx="10"/>
+    <!-- Animal mascot icon in center -->
+    <circle cx="140" cy="140" r="30" fill="#ea580c"/>
+    <text x="140" y="148" font-size="28" text-anchor="middle">🦁</text>
+
+    <rect x="200" y="95" width="14" height="40" fill="#1e293b"/>
+    <rect x="225" y="105" width="30" height="14" fill="#1e293b"/>
+    <rect x="200" y="150" width="40" height="14" fill="#1e293b"/>
+    <rect x="245" y="140" width="14" height="30" fill="#1e293b"/>
+
+    <rect x="95" y="200" width="20" height="20" fill="#1e293b"/>
+    <rect x="125" y="200" width="30" height="14" fill="#1e293b"/>
+    <rect x="170" y="200" width="14" height="40" fill="#1e293b"/>
+    <rect x="195" y="210" width="30" height="20" fill="#1e293b"/>
+    <rect x="235" y="200" width="20" height="30" fill="#1e293b"/>
+
+    <rect x="95" y="235" width="45" height="20" fill="#1e293b"/>
+    <rect x="150" y="245" width="35" height="15" fill="#1e293b"/>
+    <rect x="195" y="240" width="40" height="18" fill="#1e293b"/>
+  </g>
+
+  <!-- Footer hint -->
+  <text x="200" y="462" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Pindai dengan BCA, Mandiri, GoPay, OVO, ShopeePay, atau DANA</text>
+</svg>
