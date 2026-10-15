@@ -47,7 +47,7 @@ export const birthdayData: BirthdayConfig = {
   mapsUrl: "https://maps.google.com/?q=Gembol+Sari",
   heroImage: "/images/fahmi-hero.jpg",
   qrisImage: "/qris.jpeg",
-  rundownStatus: "Ke Runding Hela (Akan Segera Diumumkan)",
+  rundownStatus: "👀 COMING SOON!",
   bankAccounts: [
     {
       bank: "BCA",

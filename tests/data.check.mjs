@@ -14,7 +14,7 @@ assert.ok(content.includes("Rumah Fathan"), "Location name must be Rumah Fathan"
 assert.ok(content.includes("Gembol Sari"), "Address must include Gembol Sari");
 assert.ok(content.includes("2780995389"), "BCA account must be 2780995389");
 assert.ok(content.includes("08211322021"), "GoPay account must be 08211322021");
-assert.ok(content.includes("Ke Runding Hela"), "Rundown status must be Ke Runding Hela");
+assert.ok(content.includes("COMING SOON"), "Rundown status must be COMING SOON");
 assert.ok(content.includes("/qris.jpeg"), "Data must point to /qris.jpeg");
 assert.ok(content.includes("gallery"), "Data must contain photo gallery");
 

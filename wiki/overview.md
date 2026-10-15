@@ -9,8 +9,8 @@ Proyek website undangan ulang tahun interaktif untuk **Muhammad Fathan Kahfi Put
 - **Fitur Utama**:
   1. **Splash Screen**: Layar pembuka interaktif dengan tombol "Buka Undangan 💌" untuk mengatasi kebijakan autoplay audio browser.
   2. **Hero & Countdown**: Nama anak, usia, foto berbingkai satwa, serta countdown timer langsung ke tanggal acara (Sabtu, 24 Oktober 2026).
-  3. **Waktu & Lokasi**: Informasi tanggal, jam, alamat lengkap (Rumah Fathan - Gembol Sari), dresscode, tautan Google Maps langsung, dan tombol simpan ke Google Calendar.
-  4. **Rundown Acara**: Status rundown acara (Ke Runding Hela / sedang dimusyawarahkan).
+  3. **Waktu & Lokasi**: Informasi tanggal, jam, alamat lengkap (Rumah Fathan - Gembol Sari), tautan Google Maps langsung, dan tombol simpan ke Google Calendar.
+  4. **Rundown Acara**: Status rundown acara (👀 COMING SOON!).
   5. **Galeri Momen**: Grid foto responsif dengan lightbox pembesar foto.
   6. **Amplop Digital (QRIS & Bank)**: Kode QRIS standar nasional dan nomor rekening transfer (BCA: 2780995389 & GoPay: 08211322021) dengan tombol salin otomatis 1-klik.
   7. **Buku Tamu (Guestbook)**: Ucapan dan doa dari para tamu dengan pilihan avatar hewan lucu (tersimpan di `localStorage`).

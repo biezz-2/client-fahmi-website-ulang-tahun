@@ -17,7 +17,7 @@ export const birthdayData: BirthdayConfig = {
   mapsUrl: "https://maps.google.com/?q=Gembol+Sari", // Link Google Maps
   heroImage: "/images/fahmi-hero.jpg", // Foto utama
   qrisImage: "/qris.jpeg",            // Path gambar QRIS asli klien
-  rundownStatus: "Ke Runding Hela (Akan Segera Diumumkan)", // Status rundown
+  rundownStatus: "👀 COMING SOON!",          // Status rundown
   bankAccounts: [ ... ],             // Rekening bank & E-wallet (BCA & GoPay)
   gallery: [ ... ],                  // Koleksi foto kenangan
   closingMessage: "...",             // Pesan penutup

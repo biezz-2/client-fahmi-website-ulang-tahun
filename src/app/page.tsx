@@ -146,9 +146,6 @@ export default function BirthdayPage() {
                 <h4 className="text-lg font-black text-amber-950 mb-2">Hari & Tanggal</h4>
                 <p className="text-xl font-bold text-amber-700">{birthdayData.date}</p>
                 <p className="text-sm font-semibold text-amber-900 mt-1">Pukul: {birthdayData.time}</p>
-                <div className="mt-4 p-3 bg-white rounded-xl border border-amber-200 text-xs text-amber-800">
-                  <span className="font-bold">👔 Dresscode:</span> Safari Adventure / Pakaian Kasual Ceria (Khaki, Kuning, Cokelat, atau Hijau)
-                </div>
               </div>
 
               <div className="mt-6">
@@ -198,10 +195,13 @@ export default function BirthdayPage() {
               Rundown Acara
             </h4>
             <div className="inline-block bg-amber-100 text-amber-900 border border-amber-300 font-bold px-5 py-2 rounded-2xl text-sm shadow-xs">
-              🕒 {birthdayData.rundownStatus}
+              {birthdayData.rundownStatus}
             </div>
             <p className="text-xs sm:text-sm text-amber-800/80 mt-3 max-w-md mx-auto leading-relaxed">
-              Susunan kegiatan dan keseruan pesta ulang tahun {birthdayData.nickName} sedang dimusyawarahkan (ke runding hela). Informasi detail akan diumumkan menjelang hari pelaksanaan!
+              Bakal ada lomba seru dengan berbagai hadiah menarik yang udah menanti! 🏆🎁
+            </p>
+            <p className="text-xs sm:text-sm font-bold text-amber-700 mt-2">
+              Stay tuned and get ready! 🔥
             </p>
           </div>
         </div>

@@ -8,8 +8,8 @@ Website undangan ulang tahun interaktif untuk **Muhammad Fathan Kahfi Putra (Fat
 
 - **💌 Splash Screen Interaktif**: Layar sambutan dengan animasi satwa dan tombol *"Buka Undangan"* yang membuka pemutaran audio secara mulus.
 - **🦁 Hero & Countdown Timer**: Nama lengkap (**MUHAMMAD FATHAN KAHFI PUTRA**), usia ulang tahun ke-1, foto berbingkai hewan safari, dan penghitung waktu mundur menuju hari-H (Sabtu, 24 Oktober 2026).
-- **📍 Detail Acara & Peta**: Tanggal, waktu pelaksanaan, alamat lengkap (**Rumah Fathan - Gembol Sari**), dress code, tombol navigasi Google Maps, dan tombol simpan otomatis ke Google Calendar.
-- **🎪 Rundown Acara**: Status rundown terkonfigurasi (*Ke Runding Hela / Sedang Dimusyawarahkan*).
+- **📍 Detail Acara & Peta**: Tanggal, waktu pelaksanaan, alamat lengkap (**Rumah Fathan - Gembol Sari**), tombol navigasi Google Maps, dan tombol simpan otomatis ke Google Calendar.
+- **🎪 Rundown Acara**: Status rundown terkonfigurasi (*👀 COMING SOON!*).
 - **📸 Galeri Foto**: Koleksi momen ceria Fathan dengan modal pembesar (lightbox).
 - **🎁 Amplop Digital & QRIS**: Pindai QRIS dan transfer (BCA: 2780995389 & GoPay: 08211322021) 1-klik dengan notifikasi status instan.
 - **💌 Buku Tamu & Doa (Guestbook)**: Formulir ucapan selamat dan doa dengan pilihan avatar karakter hewan lucu serta persistensi data browser.
