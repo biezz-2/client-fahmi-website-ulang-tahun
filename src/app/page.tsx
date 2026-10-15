@@ -30,7 +30,7 @@ export default function BirthdayPage() {
     `Ulang Tahun ${birthdayData.childName} ke-${birthdayData.age}`
   )}&dates=20261024T030000Z/20261024T060000Z&details=${encodeURIComponent(
     `Perayaan Ulang Tahun ${birthdayData.childName} yang ke-${birthdayData.age} bertema Safari Hewan.`
-  )}&location=${encodeURIComponent(birthdayData.locationAddress)}`;
+  )}&location=${encodeURIComponent(birthdayData.locationAddress || birthdayData.locationName)}`;
 
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-amber-950 font-sans selection:bg-amber-200 relative overflow-x-hidden">
@@ -168,9 +168,6 @@ export default function BirthdayPage() {
                 </div>
                 <h4 className="text-lg font-black text-amber-950 mb-2">Lokasi Pesta</h4>
                 <p className="text-lg font-bold text-amber-800">{birthdayData.locationName}</p>
-                <p className="text-sm text-amber-900/80 mt-2 leading-relaxed">
-                  {birthdayData.locationAddress}
-                </p>
               </div>
 
               <div className="mt-6">

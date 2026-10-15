@@ -13,8 +13,8 @@ export const birthdayData: BirthdayConfig = {
   time: "10:00 WIB - Selesai",       // Waktu acara
   isoDate: "2026-10-24T10:00:00+07:00", // Waktu untuk countdown
   locationName: "Rumah Fathan",       // Nama tempat
-  locationAddress: "Gembol Sari",    // Alamat lengkap
-  mapsUrl: "https://maps.google.com/?q=Gembol+Sari", // Link Google Maps
+  locationAddress: "",    // Alamat lengkap (opsional/dikosongkan)
+  mapsUrl: "https://maps.app.goo.gl/ANG3kz1MD9VGvnw4A?g_st=ic", // Link Google Maps
   heroImage: "/images/fahmi-hero.jpg", // Foto utama
   qrisImage: "/qris.jpeg",            // Path gambar QRIS asli klien
   rundownStatus: "👀 COMING SOON!",          // Status rundown

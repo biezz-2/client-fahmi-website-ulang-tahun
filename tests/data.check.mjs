@@ -11,7 +11,7 @@ assert.ok(content.includes("Fathan"), "Data must contain nickname Fathan");
 assert.ok(content.includes("age: 1"), "Age must be 1");
 assert.ok(content.includes("Sabtu, 24 Oktober 2026"), "Date must be Sabtu, 24 Oktober 2026");
 assert.ok(content.includes("Rumah Fathan"), "Location name must be Rumah Fathan");
-assert.ok(content.includes("Gembol Sari"), "Address must include Gembol Sari");
+assert.ok(content.includes("ANG3kz1MD9VGvnw4A"), "Maps URL must include updated link");
 assert.ok(content.includes("2780995389"), "BCA account must be 2780995389");
 assert.ok(content.includes("08211322021"), "GoPay account must be 08211322021");
 assert.ok(content.includes("COMING SOON"), "Rundown status must be COMING SOON");
