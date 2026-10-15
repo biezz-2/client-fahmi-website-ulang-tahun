@@ -13,7 +13,7 @@ Website undangan ulang tahun interaktif untuk **Muhammad Fathan Kahfi Putra (Fat
 - **📸 Galeri Foto**: Koleksi momen ceria Fathan dengan modal pembesar (lightbox).
 - **🎁 Amplop Digital & QRIS**: Pindai QRIS dan transfer (BCA: 2780995389 & GoPay: 08211322021) 1-klik dengan notifikasi status instan.
 - **💌 Buku Tamu & Doa (Guestbook)**: Formulir ucapan selamat dan doa dengan pilihan avatar karakter hewan lucu serta persistensi data browser.
-- **🎶 Musik & Confetti**: Backsound melodi *Happy Birthday* menggunakan Web Audio API tanpa beban file audio eksternal yang lambat, disertai taburan confetti kanvas warna-warni.
+- **🎶 Musik & Confetti**: Backsound lagu *Happy Birthday* interaktif (`/birthday-song.mp3`), disertai taburan confetti kanvas warna-warni.
 - **⚙️ Konfigurasi Mudah**: Seluruh teks, tanggal, lokasi, foto, dan rekening bank terpusat di `src/data/birthdayData.ts`.
 
 ---

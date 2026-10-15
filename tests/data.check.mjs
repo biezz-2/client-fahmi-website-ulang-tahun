@@ -21,4 +21,7 @@ assert.ok(content.includes("gallery"), "Data must contain photo gallery");
 const qrisFile = path.resolve("public/qris.jpeg");
 assert.ok(fs.existsSync(qrisFile), "public/qris.jpeg must exist");
 
-console.log("✓ All updated birthday data and QRIS asset assertions passed!");
+const audioFile = path.resolve("public/birthday-song.mp3");
+assert.ok(fs.existsSync(audioFile), "public/birthday-song.mp3 must exist");
+
+console.log("✓ All updated birthday data, audio, and QRIS asset assertions passed!");
