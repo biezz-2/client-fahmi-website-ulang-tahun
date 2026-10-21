@@ -25,7 +25,6 @@ export interface BirthdayConfig {
   locationAddress: string;
   mapsUrl: string;
   heroImage: string;
-  qrisImage: string;
   rundownStatus: string;
   bankAccounts: BankAccount[];
   gallery: GalleryPhoto[];
@@ -40,18 +39,23 @@ export const birthdayData: BirthdayConfig = {
   theme: "Safari Adventure & Animal Friends",
   tagline: "Petualangan Ceria di Rimba Satwa!",
   date: "Sabtu, 24 Oktober 2026",
-  time: "10:00 WIB - Selesai",
-  isoDate: "2026-10-24T10:00:00+07:00",
-  locationName: "Rumah Fathan",
+  time: "13:00 WIB - Selesai",
+  isoDate: "2026-10-24T13:00:00+07:00",
+  locationName: "Rumah Fathan Gembol Sari",
   locationAddress: "",
   mapsUrl: "https://maps.app.goo.gl/ANG3kz1MD9VGvnw4A?g_st=ic",
   heroImage: "/images/fahmi-hero.jpg",
-  qrisImage: "/qris.jpeg",
   rundownStatus: "👀 COMING SOON!",
   bankAccounts: [
     {
       bank: "BCA",
       accountNumber: "2780995389",
+      accountName: "Orang Tua Fathan",
+      badge: "Bank Transfer",
+    },
+    {
+      bank: "Mandiri",
+      accountNumber: "1320032762412",
       accountName: "Orang Tua Fathan",
       badge: "Bank Transfer",
     },

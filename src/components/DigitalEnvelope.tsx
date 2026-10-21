@@ -1,18 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
 import { BankAccount } from "@/data/birthdayData";
 
 interface DigitalEnvelopeProps {
-  qrisImage: string;
   accounts: BankAccount[];
   childName?: string;
 }
 
-export function DigitalEnvelope({ qrisImage, accounts, childName = "Fathan" }: DigitalEnvelopeProps) {
+export function DigitalEnvelope({ accounts, childName = "Fathan" }: DigitalEnvelopeProps) {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
-  const [showQrisModal, setShowQrisModal] = useState<boolean>(false);
 
   const handleCopy = (text: string, index: number) => {
     navigator.clipboard.writeText(text);
@@ -34,30 +31,8 @@ export function DigitalEnvelope({ qrisImage, accounts, childName = "Fathan" }: D
           Kado & Tanda Kasih Untuk {childName}
         </h3>
         <p className="text-sm text-amber-700/80 mt-1.5 max-w-sm mx-auto">
-          Doa restu Om, Tante, dan teman-teman adalah kado terindah. Jika ingin memberikan tanda kasih secara digital, silakan gunakan QRIS atau transfer berikut:
+          Doa restu Om, Tante, dan teman-teman adalah kado terindah. Jika ingin memberikan tanda kasih secara digital, silakan transfer ke salah satu rekening berikut:
         </p>
-      </div>
-
-      {/* QRIS Card */}
-      <div className="bg-amber-50/70 rounded-2xl p-5 border-2 border-dashed border-amber-300 text-center flex flex-col items-center mb-6">
-        <div className="flex items-center gap-2 mb-2 font-bold text-amber-900 text-sm">
-          <span>📱</span> Pindai QRIS (Semua Bank / E-Wallet)
-        </div>
-        <div
-          onClick={() => setShowQrisModal(true)}
-          className="cursor-pointer group relative bg-white p-3 rounded-2xl shadow-sm border border-amber-200 hover:scale-105 transition-transform"
-        >
-          <Image
-            src={qrisImage}
-            alt={`QRIS ${childName}`}
-            width={200}
-            height={240}
-            className="w-48 h-auto object-contain rounded-lg"
-          />
-          <span className="block mt-1 text-[11px] text-amber-600 font-semibold group-hover:underline">
-            🔍 Ketuk untuk memperbesar
-          </span>
-        </div>
       </div>
 
       {/* Bank & E-Wallet List */}
@@ -98,45 +73,6 @@ export function DigitalEnvelope({ qrisImage, accounts, childName = "Fathan" }: D
           );
         })}
       </div>
-
-      {/* Modal QRIS Viewer */}
-      {showQrisModal && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in"
-          onClick={() => setShowQrisModal(false)}
-        >
-          <div
-            className="bg-white rounded-3xl p-6 max-w-sm w-full text-center relative border-4 border-amber-300"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setShowQrisModal(false)}
-              className="absolute top-3 right-3 text-gray-400 hover:text-gray-800 bg-gray-100 rounded-full w-8 h-8 flex items-center justify-center font-bold"
-            >
-              ✕
-            </button>
-            <h4 className="text-lg font-black text-amber-900 mb-3">QRIS Pembayaran</h4>
-            <div className="flex justify-center mb-3">
-              <Image
-                src={qrisImage}
-                alt="QRIS Detail"
-                width={300}
-                height={360}
-                className="w-full max-w-[280px] h-auto rounded-xl shadow-inner border border-amber-200"
-              />
-            </div>
-            <p className="text-xs text-amber-700 mb-4">
-              Buka aplikasi m-Banking atau e-wallet Anda, lalu pindai kode QR di atas.
-            </p>
-            <button
-              onClick={() => setShowQrisModal(false)}
-              className="w-full py-2.5 bg-amber-500 hover:bg-amber-600 text-white font-bold rounded-xl text-sm"
-            >
-              Tutup
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 }

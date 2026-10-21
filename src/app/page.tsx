@@ -28,7 +28,7 @@ export default function BirthdayPage() {
 
   const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
     `Ulang Tahun ${birthdayData.childName} ke-${birthdayData.age}`
-  )}&dates=20261024T030000Z/20261024T060000Z&details=${encodeURIComponent(
+  )}&dates=20261024T060000Z/20261024T100000Z&details=${encodeURIComponent(
     `Perayaan Ulang Tahun ${birthdayData.childName} yang ke-${birthdayData.age} bertema Safari Hewan.`
   )}&location=${encodeURIComponent(birthdayData.locationAddress || birthdayData.locationName)}`;
 
@@ -221,10 +221,9 @@ export default function BirthdayPage() {
         <PhotoGallery photos={birthdayData.gallery} />
       </section>
 
-      {/* DIGITAL ENVELOPE / QRIS SECTION */}
+      {/* DIGITAL ENVELOPE SECTION */}
       <section className="relative z-10 py-12 px-4 bg-amber-100/50 border-y border-amber-200">
         <DigitalEnvelope
-          qrisImage={birthdayData.qrisImage}
           accounts={birthdayData.bankAccounts}
           childName={birthdayData.nickName}
         />

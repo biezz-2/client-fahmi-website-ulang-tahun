@@ -10,15 +10,14 @@ export const birthdayData: BirthdayConfig = {
   theme: "Safari Adventure & Animal Friends", // Tema pesta
   tagline: "Petualangan Ceria di Rimba Satwa!", // Slogan kecil
   date: "Sabtu, 24 Oktober 2026",    // Format teks tanggal
-  time: "10:00 WIB - Selesai",       // Waktu acara
-  isoDate: "2026-10-24T10:00:00+07:00", // Waktu untuk countdown
-  locationName: "Rumah Fathan",       // Nama tempat
+  time: "13:00 WIB - Selesai",       // Waktu acara
+  isoDate: "2026-10-24T13:00:00+07:00", // Waktu untuk countdown
+  locationName: "Rumah Fathan Gembol Sari",       // Nama tempat
   locationAddress: "",    // Alamat lengkap (opsional/dikosongkan)
   mapsUrl: "https://maps.app.goo.gl/ANG3kz1MD9VGvnw4A?g_st=ic", // Link Google Maps
   heroImage: "/images/fahmi-hero.jpg", // Foto utama
-  qrisImage: "/qris.jpeg",            // Path gambar QRIS asli klien
   rundownStatus: "👀 COMING SOON!",          // Status rundown
-  bankAccounts: [ ... ],             // Rekening bank & E-wallet (BCA & GoPay)
+  bankAccounts: [ ... ],             // Rekening bank & E-wallet (BCA, Mandiri & GoPay)
   gallery: [ ... ],                  // Koleksi foto kenangan
   closingMessage: "...",             // Pesan penutup
   familyGreeting: "..."              // Nama keluarga besar
