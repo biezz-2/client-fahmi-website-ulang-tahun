@@ -30,7 +30,7 @@ export default function BirthdayPage() {
     `Ulang Tahun ${birthdayData.childName} ke-${birthdayData.age}`
   )}&dates=20261024T060000Z/20261024T100000Z&details=${encodeURIComponent(
     `Perayaan Ulang Tahun ${birthdayData.childName} yang ke-${birthdayData.age} bertema Safari Hewan.`
-  )}&location=${encodeURIComponent(birthdayData.locationAddress || birthdayData.locationName)}`;
+  )}&location=${encodeURIComponent(birthdayData.locationName)}`;
 
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-amber-950 font-sans selection:bg-amber-200 relative overflow-x-hidden">
@@ -88,7 +88,7 @@ export default function BirthdayPage() {
             </div>
           </div>
           <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-amber-900 text-amber-100 text-xs font-bold px-4 py-1 rounded-full shadow whitespace-nowrap">
-            🦁 Si Pemberani Ceria
+            🦁 Si Pemberani
           </div>
         </div>
 
@@ -155,16 +155,18 @@ export default function BirthdayPage() {
                 <p className="text-lg font-bold text-amber-800">{birthdayData.locationName}</p>
               </div>
 
-              <div className="mt-6">
-                <a
-                  href={birthdayData.mapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full py-2.5 px-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
-                >
-                  <span>🗺️ Buka di Google Maps</span>
-                </a>
-              </div>
+              {birthdayData.mapsUrl && (
+                <div className="mt-6">
+                  <a
+                    href={birthdayData.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full py-2.5 px-4 bg-orange-600 hover:bg-orange-700 text-white font-bold rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow-sm transition-colors"
+                  >
+                    <span>🗺️ Buka di Google Maps</span>
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 
