@@ -34,7 +34,6 @@ export default function BirthdayPage() {
 
   return (
     <div className="min-h-screen bg-[#FFF9F0] text-amber-950 font-sans selection:bg-amber-200 relative overflow-x-hidden">
-      {/* Splash Screen Overlay */}
       {!isOpened && (
         <SplashScreen
           childName={birthdayData.nickName}
@@ -43,13 +42,9 @@ export default function BirthdayPage() {
         />
       )}
 
-      {/* Confetti Generator */}
       <Confetti trigger={confettiActive} />
-
-      {/* Floating Audio Player */}
       <AudioPlayer autoPlayTrigger={isOpened} />
 
-      {/* Background Decorative Tropical Leaves */}
       <div className="fixed top-0 left-0 -translate-x-1/3 -translate-y-1/3 pointer-events-none opacity-20 z-0">
         <TropicalLeaf className="w-96 h-96" />
       </div>
@@ -57,13 +52,11 @@ export default function BirthdayPage() {
         <TropicalLeaf className="w-96 h-96" />
       </div>
 
-      {/* HERO SECTION */}
       <header className="relative z-10 pt-12 pb-16 px-4 text-center max-w-4xl mx-auto">
         <div className="inline-flex items-center gap-2 bg-amber-100 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-amber-800 mb-6 shadow-xs">
           <span>🌿</span> {birthdayData.tagline} <span>🐾</span>
         </div>
 
-        {/* Animal Badge Garland */}
         <div className="flex justify-center items-center gap-3 sm:gap-6 mb-6">
           <LionIcon className="w-12 h-12 sm:w-16 sm:h-16 transform -rotate-6 hover:rotate-0 transition-transform" />
           <GiraffeIcon className="w-12 h-12 sm:w-16 sm:h-16 transform rotate-3 hover:rotate-0 transition-transform" />
@@ -71,7 +64,6 @@ export default function BirthdayPage() {
           <MonkeyIcon className="w-12 h-12 sm:w-16 sm:h-16 transform rotate-6 hover:rotate-0 transition-transform" />
         </div>
 
-        {/* Main Title */}
         <h1 className="text-3xl sm:text-5xl font-black text-amber-950 tracking-tight mb-2">
           Selamat Ulang Tahun!
         </h1>
@@ -82,17 +74,15 @@ export default function BirthdayPage() {
           🎂 Ulang Tahun ke-{birthdayData.age} Tahun 🎈
         </div>
 
-        {/* Hero Photo Card */}
         <div className="relative max-w-xs mx-auto mb-10">
           <div className="relative aspect-square rounded-3xl overflow-hidden border-8 border-white shadow-2xl bg-amber-200">
             <Image
-              src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80"
+              src={birthdayData.heroImage}
               alt={birthdayData.childName}
               fill
               priority
               className="object-cover"
             />
-            {/* Party Hat on corner */}
             <div className="absolute top-2 right-2">
               <PartyHatIcon className="w-12 h-12 transform rotate-12" />
             </div>
@@ -102,7 +92,6 @@ export default function BirthdayPage() {
           </div>
         </div>
 
-        {/* Countdown Section */}
         <div className="mt-8 mb-4">
           <p className="text-xs sm:text-sm font-bold text-amber-800 uppercase tracking-widest mb-3">
             ⏳ Menghitung Hari Menuju Pesta Safari:
@@ -110,7 +99,6 @@ export default function BirthdayPage() {
           <Countdown targetDate={birthdayData.isoDate} />
         </div>
 
-        {/* Confetti Burst Button */}
         <div className="mt-6">
           <button
             onClick={triggerManualConfetti}
@@ -121,7 +109,6 @@ export default function BirthdayPage() {
         </div>
       </header>
 
-      {/* EVENT DETAILS SECTION */}
       <section className="relative z-10 py-12 px-4 bg-white/70 backdrop-blur-xs border-y border-amber-200">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-10">
@@ -137,7 +124,6 @@ export default function BirthdayPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Card Waktu */}
             <div className="bg-amber-50 rounded-3xl p-6 sm:p-8 border-2 border-amber-200 shadow-md flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 bg-amber-200 rounded-2xl flex items-center justify-center text-2xl mb-4">
@@ -160,7 +146,6 @@ export default function BirthdayPage() {
               </div>
             </div>
 
-            {/* Card Lokasi */}
             <div className="bg-amber-50 rounded-3xl p-6 sm:p-8 border-2 border-amber-200 shadow-md flex flex-col justify-between">
               <div>
                 <div className="w-12 h-12 bg-amber-200 rounded-2xl flex items-center justify-center text-2xl mb-4">
@@ -183,7 +168,6 @@ export default function BirthdayPage() {
             </div>
           </div>
 
-          {/* Rundown Pesta */}
           <div className="mt-10 bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-200 shadow-md text-center">
             <div className="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-3">
               🎪
@@ -204,7 +188,6 @@ export default function BirthdayPage() {
         </div>
       </section>
 
-      {/* PHOTO GALLERY SECTION */}
       <section className="relative z-10 py-14 px-4 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <span className="text-xs font-black tracking-widest text-amber-600 uppercase">
@@ -221,7 +204,6 @@ export default function BirthdayPage() {
         <PhotoGallery photos={birthdayData.gallery} />
       </section>
 
-      {/* DIGITAL ENVELOPE SECTION */}
       <section className="relative z-10 py-12 px-4 bg-amber-100/50 border-y border-amber-200">
         <DigitalEnvelope
           accounts={birthdayData.bankAccounts}
@@ -229,12 +211,10 @@ export default function BirthdayPage() {
         />
       </section>
 
-      {/* GUESTBOOK SECTION */}
       <section className="relative z-10 py-14 px-4 max-w-4xl mx-auto">
         <Guestbook childName={birthdayData.nickName} age={birthdayData.age} />
       </section>
 
-      {/* CLOSING SECTION */}
       <footer className="relative z-10 py-16 px-4 text-center max-w-2xl mx-auto">
         <div className="flex justify-center mb-4">
           <LionIcon className="w-16 h-16 animate-bounce" style={{ animationDuration: "2.5s" }} />
