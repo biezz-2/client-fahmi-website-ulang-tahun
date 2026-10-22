@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 interface Wish {
   id: string;
@@ -12,7 +12,6 @@ interface Wish {
 
 interface GuestbookProps {
   childName?: string;
-  age?: number;
 }
 
 const DEFAULT_WISHES: Wish[] = [
@@ -41,30 +40,31 @@ const DEFAULT_WISHES: Wish[] = [
 
 const ANIMAL_AVATARS = ["🦁", "🦒", "🐘", "🐒", "🦉", "🦓", "🐼", "🦊"];
 
-export function Guestbook({ childName = "Fathan", age = 1 }: GuestbookProps) {
-  const [userWishes, setUserWishes] = useState<Wish[]>([]);
-  const [isClient, setIsClient] = useState<boolean>(false);
+function loadWishesFromStorage(): Wish[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const saved =
+      localStorage.getItem("fathan_birthday_wishes") ||
+      localStorage.getItem("fahmi_birthday_wishes");
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        return parsed;
+      }
+    }
+  } catch {
+    // ignore
+  }
+  return [];
+}
+
+export function Guestbook({ childName = "Fathan" }: GuestbookProps) {
+  const [userWishes, setUserWishes] = useState<Wish[]>(() => loadWishesFromStorage());
+  const isClient = typeof window !== "undefined";
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [avatar, setAvatar] = useState("🦁");
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-    try {
-      const saved =
-        localStorage.getItem("fathan_birthday_wishes") ||
-        localStorage.getItem("fahmi_birthday_wishes");
-      if (saved) {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setUserWishes(parsed);
-        }
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

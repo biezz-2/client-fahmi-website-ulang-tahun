@@ -1,3 +1,5 @@
+"use client";
+
 export interface BankAccount {
   bank: string;
   accountNumber: string;
@@ -44,7 +46,7 @@ export const birthdayData: BirthdayConfig = {
   locationName: "Rumah Fathan Gembol Sari",
   locationAddress: "",
   mapsUrl: "",
-  heroImage: "/images/fahmi-hero.jpg",
+  heroImage: "/images/farhan-1.jpeg",
   rundownStatus: "👀 COMING SOON!",
   bankAccounts: [
     {
@@ -69,27 +71,33 @@ export const birthdayData: BirthdayConfig = {
   gallery: [
     {
       id: 1,
-      url: "https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format&fit=crop&q=80",
+      url: "/images/farhan-1.jpeg",
       caption: "",
-      animalTag: "",
+      animalTag: "🦁",
     },
     {
       id: 2,
-      url: "https://images.unsplash.com/photo-1533450718592-29d45635f0a9?w=600&auto=format&fit=crop&q=80",
+      url: "/images/Farhan-2.jpeg",
       caption: "",
-      animalTag: "",
+      animalTag: "🦒",
     },
     {
       id: 3,
-      url: "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600&auto=format&fit=crop&q=80",
+      url: "/images/farhan-3.jpeg",
       caption: "",
-      animalTag: "",
+      animalTag: "🐘",
     },
     {
       id: 4,
-      url: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&auto=format&fit=crop&q=80",
+      url: "/images/farhan-4.jpeg",
       caption: "",
-      animalTag: "",
+      animalTag: "🐒",
+    },
+    {
+      id: 5,
+      url: "/images/farhan-5.jpeg",
+      caption: "",
+      animalTag: "🎂",
     },
   ],
   closingMessage:

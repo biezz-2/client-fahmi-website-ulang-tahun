@@ -212,7 +212,7 @@ export default function BirthdayPage() {
       </section>
 
       <section className="relative z-10 py-14 px-4 max-w-4xl mx-auto">
-        <Guestbook childName={birthdayData.nickName} age={birthdayData.age} />
+        <Guestbook childName={birthdayData.nickName} />
       </section>
 
       <footer className="relative z-10 py-16 px-4 text-center max-w-2xl mx-auto">

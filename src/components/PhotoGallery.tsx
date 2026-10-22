@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { GalleryPhoto } from "@/data/birthdayData";
+import { GalleryPhoto, birthdayData } from "@/data/birthdayData";
 
 interface PhotoGalleryProps {
   photos: GalleryPhoto[];
@@ -23,7 +23,7 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
             <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-amber-100">
               <Image
                 src={photo.url}
-                alt={photo.caption}
+                alt={photo.caption || birthdayData.nickName}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -33,9 +33,11 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
               </div>
             </div>
             <div className="p-2 text-center">
-              <p className="text-xs font-medium text-amber-950 line-clamp-2">
-                {photo.caption}
-              </p>
+              {photo.caption && (
+                <p className="text-xs font-medium text-amber-950 line-clamp-2">
+                  {photo.caption}
+                </p>
+              )}
             </div>
           </div>
         ))}
@@ -60,7 +62,7 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
             <div className="relative aspect-4/3 w-full rounded-2xl overflow-hidden mb-3 bg-amber-50">
               <Image
                 src={selectedPhoto.url}
-                alt={selectedPhoto.caption}
+                alt={selectedPhoto.caption || birthdayData.nickName}
                 fill
                 className="object-cover"
               />
@@ -69,9 +71,11 @@ export function PhotoGallery({ photos }: PhotoGalleryProps) {
               <span className="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-1">
                 {selectedPhoto.animalTag}
               </span>
-              <p className="text-sm font-semibold text-amber-950 mt-1">
-                {selectedPhoto.caption}
-              </p>
+              {selectedPhoto.caption && (
+                <p className="text-sm font-semibold text-amber-950 mt-1">
+                  {selectedPhoto.caption}
+                </p>
+              )}
             </div>
           </div>
         </div>
